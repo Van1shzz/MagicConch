@@ -3,15 +3,18 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+import Draggable, {DraggableCore} from 'react-draggable'; // Both at the same time
 
 
-React.createElement();
+
 
 ReactDOM.render(
   <React.StrictMode>
+    
     <App />
   </React.StrictMode>,
   document.getElementById('root')
+  
 );
 
 
