@@ -1,6 +1,8 @@
 import logo from './logo.svg';
 import './App.css';
-document.title = "Conch Simulator"
+import Draggable, {DraggableCore} from 'react-draggable'; // Both at the same time
+
+document.title = "Conch Simulator";
 
 function App() {
   return (
@@ -8,7 +10,14 @@ function App() {
     <div className="App">
       <div>
       <h1>The magic conch! A conch brother</h1>
-      <img src="images/conch.png"></img>
+      <div>
+      <Draggable>
+        <div className="drag-wrapper">
+        <img src="images/conch.png" ></img>
+        </div>
+      </Draggable>
+      </div>
+
       </div>
       <div>
       <form>
@@ -20,6 +29,7 @@ function App() {
 </form>
       </div>
     </div>
+    
   );
 }
 
