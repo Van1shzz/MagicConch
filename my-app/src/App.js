@@ -4,6 +4,8 @@ import Draggable, {DraggableCore} from 'react-draggable'; // Both at the same ti
 
 document.title = "Conch Simulator";
 
+
+
 function App() {
   return (
     
@@ -11,9 +13,10 @@ function App() {
       <div>
       <h1>The magic conch! A conch brother</h1>
       <div>
+      <img src="images/conch.png" id="conch"></img>
       <Draggable>
         <div className="drag-wrapper">
-        <img src="images/conch.png" ></img>
+        <img src="images/ring.png" id="ring" ></img>
         </div>
       </Draggable>
       </div>
@@ -26,6 +29,7 @@ function App() {
     <input type="text" name="question" />
   </label>
   <input type="submit" value="Ask" />
+  <p id="answer">Your response will appear here</p>
 </form>
       </div>
     </div>
